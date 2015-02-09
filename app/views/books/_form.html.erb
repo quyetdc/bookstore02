@@ -1,0 +1,86 @@
+<div class="form-content">
+<%= form_for @book, :html => { :class => "form-horizontal book" } do |f| %>
+
+    <% if @book.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @book.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@book[:name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :author_id, :class => 'control-label' %>
+    <div class="controls">
+      <% a = @book.author_id %>
+      <%= f.select(:author_id) do %>
+        <% if a == 0 or a == nil %>
+          <%= options_for_select([['Empty', 0]]) %>
+        <% end %>
+        <% @authors.each do |author| %>
+          <%= options_for_select([[author.name, author.id]], a) %>
+        <% end %>
+        <%= options_for_select([['Empty', 0]]) %>
+      <% end %>
+    </div>
+    <%= error_span(@book[:author_id]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :versions, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :versions, :class => 'form-control' %>
+    </div>
+    <%= error_span(@book[:versions]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :price, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :price, :class => 'form-control' %>
+    </div>
+    <%= error_span(@book[:price]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :images, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :images, :class => 'form-control' %>
+    </div>
+    <%= error_span(@book[:images]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :categoryid, :class => 'control-label' %>
+    <div class="controls">
+      <% b = @book.categoryid %>
+      <%= f.select(:categoryid) do %>
+        <% if b == 0 or b == nil %>
+          <%= options_for_select([['Empty', 0]]) %>
+        <% end %>
+        <% @categories.each do |category| %>
+          <%= options_for_select([[category.name, category.id]], b) %>
+        <% end %>
+        <%= options_for_select([['Empty', 0]]) %>
+      <% end %>
+    </div>
+    <%= error_span(@book[:categoryid]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            books_path, :class => 'btn btn-default' %>
+
+<% end %>
+</div>

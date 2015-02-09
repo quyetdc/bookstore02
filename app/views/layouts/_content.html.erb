@@ -1,0 +1,38 @@
+<div class="content-left">
+	<div class="content-left-box">
+		<div class="content-box"></div>
+		<div class="content-left-element">
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Author
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			  	<li role="presentation"><%= link_to 'Show Author', authors_path %></li>
+			    <li role="presentation"><%= link_to 'New Author', new_author_path %></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="content-left-element">
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Book
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			  	<li role="presentation"><%= link_to 'Show Books', books_path %></li>
+			    <li role="presentation"><%= link_to 'New Book', new_book_path %></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="content-left-element">
+			<div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Category
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			  	<li role="presentation"><%= link_to 'Show Category', categories_path %></li>
+			    <li role="presentation"><%= link_to 'New Category', new_category_path %></li>
+			  </ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<div class="content-left">
+ 	<div class="content-left-box">
+    	<div class="content-box"></div>
+		<%- model_class = Book -%>
+		<div class="page-header">
+			<%= link_to "", books_path, class: "glyphicon glyphicon-circle-arrow-left"%>
+		  	<span><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></span>
+		</div>
+		<%= render :partial => 'form' %>
+	</div>
+</div>

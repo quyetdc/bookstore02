@@ -1,0 +1,11 @@
+<div class="content-left">
+  	<div class="content-left-box">
+      	<div class="content-box"></div>
+		<%- model_class = Author -%>
+		<div class="page-header">
+			<%= link_to "", authors_path, class: "glyphicon glyphicon-circle-arrow-left"%>
+		  	<span><%= @author.name %></span>
+		</div>
+		<%= render :partial => 'form' %>
+	</div>
+</div>

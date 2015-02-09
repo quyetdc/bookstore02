@@ -1,0 +1,25 @@
+<div class="content-left">
+  	<div class="content-left-box">
+      	<div class="content-box"></div>
+		<%- model_class = Category -%>
+		<div class="page-header">
+			<%= link_to "", categories_path, class: "glyphicon glyphicon-circle-arrow-left"%>
+        	<span><%= @category.name %></span>
+		</div>
+
+		<dl class="dl-horizontal">
+		  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+		  <dd><%= @category.name %></dd>
+		</dl>
+
+		<%= link_to t('.back', :default => t("helpers.links.back")),
+		              categories_path, :class => 'btn btn-default'  %>
+		<%= link_to t('.edit', :default => t("helpers.links.edit")),
+		              edit_category_path(@category), :class => 'btn btn-default' %>
+		<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+		              category_path(@category),
+		              :method => 'delete',
+		              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+		              :class => 'btn btn-danger' %>
+	</div>
+</div>
