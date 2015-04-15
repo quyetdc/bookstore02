@@ -46,3 +46,14 @@ group :development, :test do
 end
 
 gem "twitter-bootstrap-rails"
+
+
+gem 'unicorn'
+
+group :development do
+  gem 'capistrano'
+  gem 'rvm1-capistrano3', require: false
+  gem 'capistrano-rails'
+  gem 'capistrano3-unicorn', require: false
+  gem 'capistrano-bundler'
+end
