@@ -29,4 +29,5 @@ by Gem
 
 #11 you can see nginx error log: /var/log/nginx/error.log or unicorn error log: shared/log/unicorn.stderr.log
 
-#12 You are welcome to contact me or fork this
+#12 start unicorn: /etc/init.d/unicorn start/restart/stop
+    start nginx:   sudo service nginx start/restart/stop
