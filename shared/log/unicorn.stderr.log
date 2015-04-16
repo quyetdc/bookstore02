@@ -1,0 +1,166 @@
+I, [2015-04-16T10:35:34.686394 #9830]  INFO -- : Refreshing Gem list
+/home/quyetdc/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/lib/devise/rails/routes.rb:480:in `raise_no_secret_key': Devise.secret_key was not set. Please add the following to your Devise initializer: (RuntimeError)
+
+  config.secret_key = '337694bd755cf3c5f6409730235507be21dc15d946b4e91acc744beed4ccabe3638fe227b7267e7add13d3200b2118f86e40eae35ea968b01fda27e62c316a17'
+
+Please ensure you restarted your application after installing Devise or setting the key.
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/lib/devise/rails/routes.rb:209:in `devise_for'
+	from /home/quyetdc/testdeploy/config/routes.rb:2:in `block in <top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/routing/route_set.rb:423:in `instance_exec'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/routing/route_set.rb:423:in `eval_block'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/actionpack-4.2.0/lib/action_dispatch/routing/route_set.rb:401:in `draw'
+	from /home/quyetdc/testdeploy/config/routes.rb:1:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application/routes_reloader.rb:40:in `each'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application/routes_reloader.rb:16:in `reload!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application.rb:169:in `reload_routes!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/lib/devise/rails.rb:14:in `block in <class:Engine>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/lazy_load_hooks.rb:36:in `call'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/activesupport-4.2.0/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application/finisher.rb:55:in `block in <module:Finisher>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/initializable.rb:30:in `instance_exec'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/initializable.rb:30:in `run'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:226:in `block in tsort_each'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:427:in `each_strongly_connected_component_from'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:345:in `each'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:345:in `call'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:224:in `tsort_each'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/tsort.rb:205:in `tsort_each'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/initializable.rb:54:in `run_initializers'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/railties-4.2.0/lib/rails/application.rb:352:in `initialize!'
+	from /home/quyetdc/testdeploy/config/environment.rb:5:in `<top (required)>'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/quyetdc/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from config.ru:4:in `block in <main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/rack-1.6.0/lib/rack/builder.rb:55:in `instance_eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/rack-1.6.0/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn.rb:48:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn.rb:48:in `block in builder'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:764:in `call'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:764:in `build_app!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:137:in `start'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-04-16T10:37:02.772766 #9875]  INFO -- : Refreshing Gem list
+I, [2015-04-16T10:37:04.504772 #9875]  INFO -- : listening on addr=/tmp/unicorn.testdeploy.sock fd=11
+I, [2015-04-16T10:37:04.509869 #9875]  INFO -- : master process ready
+I, [2015-04-16T10:37:04.534704 #9881]  INFO -- : worker=1 ready
+I, [2015-04-16T10:37:04.534704 #9878]  INFO -- : worker=0 ready
+/home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:9875 (or pid=/home/quyetdc/testdeploy/shared/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-04-16T10:45:27.748789 #10357]  INFO -- : Refreshing Gem list
+E, [2015-04-16T10:45:29.082657 #10357] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:45:29.082735 #10357] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2015-04-16T10:45:29.583256 #10357] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:45:29.583440 #10357] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2015-04-16T10:45:30.084044 #10357] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:45:30.084219 #10357] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2015-04-16T10:45:30.584764 #10357] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:45:30.584947 #10357] ERROR -- : retrying in 0.5 seconds (1 tries left)
+E, [2015-04-16T10:45:31.085498 #10357] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:45:31.085673 #10357] ERROR -- : retrying in 0.5 seconds (0 tries left)
+E, [2015-04-16T10:45:31.586235 #10357] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+/home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `initialize': Address already in use - connect(2) for "/tmp/unicorn.testdeploy.sock" (Errno::EADDRINUSE)
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `new'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `bind_listen'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:242:in `listen'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `block in bind_new_listeners!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `each'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `bind_new_listeners!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:138:in `start'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-04-16T10:46:35.506381 #10389]  INFO -- : Refreshing Gem list
+E, [2015-04-16T10:46:36.853546 #10389] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:46:36.853614 #10389] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2015-04-16T10:46:37.356494 #10389] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:46:37.356704 #10389] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2015-04-16T10:46:37.857144 #10389] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:46:37.857355 #10389] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2015-04-16T10:46:38.357925 #10389] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:46:38.358140 #10389] ERROR -- : retrying in 0.5 seconds (1 tries left)
+E, [2015-04-16T10:46:38.858740 #10389] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+E, [2015-04-16T10:46:38.858963 #10389] ERROR -- : retrying in 0.5 seconds (0 tries left)
+E, [2015-04-16T10:46:39.359517 #10389] ERROR -- : adding listener failed addr=/tmp/unicorn.testdeploy.sock (in use)
+/home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `initialize': Address already in use - connect(2) for "/tmp/unicorn.testdeploy.sock" (Errno::EADDRINUSE)
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `new'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `bind_listen'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:242:in `listen'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `block in bind_new_listeners!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `each'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `bind_new_listeners!'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:138:in `start'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-04-16T10:47:20.401549 #10412]  INFO -- : Refreshing Gem list
+I, [2015-04-16T10:47:21.720161 #10412]  INFO -- : unlinking existing socket=/tmp/unicorn.testdeploy.sock
+I, [2015-04-16T10:47:21.720289 #10412]  INFO -- : listening on addr=/tmp/unicorn.testdeploy.sock fd=11
+I, [2015-04-16T10:47:21.725189 #10412]  INFO -- : master process ready
+I, [2015-04-16T10:47:21.738309 #10415]  INFO -- : worker=0 ready
+I, [2015-04-16T10:47:21.739850 #10418]  INFO -- : worker=1 ready
+I, [2015-04-16T10:55:58.412647 #10710]  INFO -- : Refreshing Gem list
+I, [2015-04-16T10:55:59.407007 #10710]  INFO -- : unlinking existing socket=/tmp/unicorn.testdeploy.sock
+I, [2015-04-16T10:55:59.407139 #10710]  INFO -- : listening on addr=/tmp/unicorn.testdeploy.sock fd=11
+I, [2015-04-16T10:55:59.412473 #10710]  INFO -- : master process ready
+I, [2015-04-16T10:55:59.426503 #10713]  INFO -- : worker=0 ready
+I, [2015-04-16T10:55:59.428837 #10716]  INFO -- : worker=1 ready
+/home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:10710 (or pid=/home/quyetdc/testdeploy/shared/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-04-16T10:57:56.012681 #10962]  INFO -- : Refreshing Gem list
+I, [2015-04-16T10:57:57.014946 #10962]  INFO -- : unlinking existing socket=/tmp/unicorn.testdeploy.sock
+I, [2015-04-16T10:57:57.015076 #10962]  INFO -- : listening on addr=/tmp/unicorn.testdeploy.sock fd=11
+I, [2015-04-16T10:57:57.020396 #10962]  INFO -- : master process ready
+I, [2015-04-16T10:57:57.031818 #10965]  INFO -- : worker=0 ready
+I, [2015-04-16T10:57:57.037975 #10968]  INFO -- : worker=1 ready
+/home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:10962 (or pid=/home/quyetdc/testdeploy/shared/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `load'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/unicorn:23:in `<main>'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+	from /home/quyetdc/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-04-16T11:08:51.119903 #11753]  INFO -- : Refreshing Gem list
+I, [2015-04-16T11:08:52.406066 #11753]  INFO -- : unlinking existing socket=/tmp/unicorn.testdeploy.sock
+I, [2015-04-16T11:08:52.431409 #11753]  INFO -- : listening on addr=/tmp/unicorn.testdeploy.sock fd=11
+I, [2015-04-16T11:08:52.436905 #11753]  INFO -- : master process ready
+I, [2015-04-16T11:08:52.451052 #11756]  INFO -- : worker=0 ready
+I, [2015-04-16T11:08:52.452568 #11759]  INFO -- : worker=1 ready
+I, [2015-04-16T11:11:40.793373 #11832]  INFO -- : Refreshing Gem list
+I, [2015-04-16T11:11:41.807924 #11832]  INFO -- : unlinking existing socket=/tmp/unicorn.testdeploy.sock
+I, [2015-04-16T11:11:41.808064 #11832]  INFO -- : listening on addr=/tmp/unicorn.testdeploy.sock fd=11
+I, [2015-04-16T11:11:41.813271 #11832]  INFO -- : master process ready
+I, [2015-04-16T11:11:41.828182 #11835]  INFO -- : worker=0 ready
+I, [2015-04-16T11:11:41.829868 #11838]  INFO -- : worker=1 ready

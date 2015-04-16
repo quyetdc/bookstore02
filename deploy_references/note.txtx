@@ -1,0 +1,32 @@
+#1. install nginx
+
+sudo -s
+nginx=stable # use nginx=development for latest development version
+add-apt-repository ppa:nginx/$nginx
+apt-get update 
+apt-get install nginx
+
+#2 install unicorn
+
+by Gem
+
+#3 create /etc/nginx/nginx.conf, /etc/nginx/sites-enabled/default
+, /etc/init.d/unicorn
+
+#4 config config/deploy.rb, config/unicorn.rb
+
+#5 Add key in config/secrets.yml
+
+#6 Run bundle exec rake assets:precompile
+
+#7 create shared/config/unicorn.rb, shared/log/unicorn.stderr.log, shared/log/unicorn.sdtout.log, pids/unicorn.pid
+
+#8 plz be careful with socket between nginx and unicorn. They must be the same
+
+#9 you may need to kill unicorn process by: ps aux | grep unicorn (to view unicorn process) and then: sudo kill -9 process_number
+
+#10 you need to restart unicorn, nginx when have changes
+
+#11 you can see nginx error log: /var/log/nginx/error.log or unicorn error log: shared/log/unicorn.stderr.log
+
+#12 You are welcome to contact me or fork this

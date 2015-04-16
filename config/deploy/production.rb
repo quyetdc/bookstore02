@@ -59,9 +59,3 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
-
-
-set :application, "Sample"
-set :user, "quyetdc"
-set :port, 22
-set :deploy_to, "/home/#{user}/apps/#{application}"

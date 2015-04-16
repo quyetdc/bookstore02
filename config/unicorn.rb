@@ -22,13 +22,13 @@ timeout 30
 working_directory "/home/quyetdc/testdeploy/"
 
 # feel free to point this anywhere accessible on the filesystem
-user 'ec2-user' #, 'root'
+user 'quyetdc' #, 'root'
 shared_path = "/home/quyetdc/testdeploy/shared"
 
 stderr_path "#{shared_path}/log/unicorn.stderr.log"
 stdout_path "#{shared_path}/log/unicorn.stdout.log"
 
-pid "/tmp/pids/unicorn.pid"
+pid "#{shared_path}/tmp/pids/unicorn.pid"
 
 
 before_fork do |server, worker|
@@ -40,7 +40,7 @@ before_fork do |server, worker|
 
   # Before forking, kill the master process that belongs to the .oldbin PID.
   # This enables 0 downtime deploys.
-  old_pid = "/tmp/pids/unicorn.pid.oldbin"
+  old_pid = "#{shared_path}/pids/unicorn.pid.oldbin"
   if File.exists?(old_pid) && server.pid != old_pid
     begin
       Process.kill("QUIT", File.read(old_pid).to_i)
