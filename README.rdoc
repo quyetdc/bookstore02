@@ -1,28 +1,67 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+====Install nginx
+sudo -s 
 
-Things you may want to cover:
+nginx=stable # use nginx=development for latest development version 
 
-* Ruby version
+add-apt-repository ppa:nginx/$nginx 
 
-* System dependencies
+apt-get update 
 
-* Configuration
+apt-get install nginx 
 
-* Database creation
+====Install unicorn
 
-* Database initialization
+by Gem
 
-* How to run the test suite
+====Create 
+/etc/nginx/nginx.conf 
 
-* Services (job queues, cache servers, search engines, etc.)
+/etc/nginx/sites-enabled/default 
 
-* Deployment instructions
+/etc/init.d/unicorn 
 
-* ...
 
+====Config 
+config/deploy.rb 
+
+config/unicorn.rb 
+
+====Add key in config/secrets.yml
+
+====Bundle exec rake assets:precompile
+
+====Create 
+shared/config/unicorn.rb 
+
+shared/log/unicorn.stderr.log 
+
+shared/log/unicorn.sdtout.log 
+
+pids/unicorn.pid 
+
+====Plz be careful with socket between nginx and unicorn. They must be the same
+
+====You may need: 
+
+ps aux | grep unicorn (to view unicorn process) 
+
+sudo kill -9 process_number 
+
+====You need to restart unicorn, nginx when have changes
+
+====You can see log: 
+
+nginx error log: /var/log/nginx/error.log 
+
+or unicorn error log: shared/log/unicorn.stderr.log 
+
+==== Start
+
+start unicorn: /etc/init.d/unicorn start/restart/stop 
+
+start nginx: sudo service nginx start/restart/stop 
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
