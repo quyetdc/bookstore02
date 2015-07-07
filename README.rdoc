@@ -1,4 +1,5 @@
 == README
+* Note: you may want to try separate nginx and unicorn
 
 ====Install nginx
 sudo -s 
@@ -35,7 +36,6 @@ config/unicorn.rb
 ====Bundle exec rake assets:precompile
 
 ====Create 
-shared/config/unicorn.rb 
 
 shared/log/unicorn.stderr.log 
 
