@@ -11,6 +11,8 @@ apt-get update
 
 apt-get install nginx 
 
+# You can check nginx on localhost:80
+
 ====Install unicorn
 
 by Gem
