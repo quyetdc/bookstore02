@@ -61,7 +61,11 @@ or unicorn error log: shared/log/unicorn.stderr.log
 
 ==== Start
 
-start unicorn: /etc/init.d/unicorn start/restart/stop 
+start unicorn: 
+You may want to make unicorn as executable
+sudo chmod +x /etc/init.d/unicorn
+
+/etc/init.d/unicorn start/restart/stop 
 
 start nginx: sudo service nginx start/restart/stop 
 
